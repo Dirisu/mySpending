@@ -9,13 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            TabView {
+                ExpenseScreen()
+                    .badge(2)
+                .tabItem{
+                    Label("My Expenses", systemImage: "bag.fill.badge.minus")
+                }
+                
+                ReportScreen()
+                    .tabItem {
+                        Label("Expense Summary", systemImage: "chart.bar.xaxis")
+                    }
+                
+                AddExpenseScreen()
+                    .tabItem {
+                        Label("Add Expense", systemImage: "folder.fill.badge.plus")
+                    }
+                ManageExpenseScreen()
+                    .badge("-")
+                    .tabItem {
+                        Label("Settings", systemImage: "folder.fill.badge.gearshape")
+                    }
+                
+            }
         }
-        .padding()
+        
     }
 }
 

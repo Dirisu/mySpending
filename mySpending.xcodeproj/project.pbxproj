@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705E41432B70C9BA007EDC38 /* ExpenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705E41422B70C9BA007EDC38 /* ExpenseScreen.swift */; };
+		705E41452B70C9C9007EDC38 /* ReportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705E41442B70C9C9007EDC38 /* ReportScreen.swift */; };
+		705E41472B70CA54007EDC38 /* AddExpenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705E41462B70CA54007EDC38 /* AddExpenseScreen.swift */; };
+		705E41492B70CA6A007EDC38 /* ManageExpenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705E41482B70CA6A007EDC38 /* ManageExpenseScreen.swift */; };
+		705E414B2B70CA7C007EDC38 /* CategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705E414A2B70CA7C007EDC38 /* CategoryScreen.swift */; };
+		705E414E2B725707007EDC38 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705E414D2B725707007EDC38 /* Category.swift */; };
 		7096712F2B6CC3ED00BD1A73 /* mySpendingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7096712E2B6CC3ED00BD1A73 /* mySpendingApp.swift */; };
 		709671312B6CC3ED00BD1A73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709671302B6CC3ED00BD1A73 /* ContentView.swift */; };
 		709671332B6CC3EF00BD1A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709671322B6CC3EF00BD1A73 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		705E41422B70C9BA007EDC38 /* ExpenseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseScreen.swift; sourceTree = "<group>"; };
+		705E41442B70C9C9007EDC38 /* ReportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportScreen.swift; sourceTree = "<group>"; };
+		705E41462B70CA54007EDC38 /* AddExpenseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseScreen.swift; sourceTree = "<group>"; };
+		705E41482B70CA6A007EDC38 /* ManageExpenseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageExpenseScreen.swift; sourceTree = "<group>"; };
+		705E414A2B70CA7C007EDC38 /* CategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreen.swift; sourceTree = "<group>"; };
+		705E414D2B725707007EDC38 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7096712B2B6CC3ED00BD1A73 /* mySpending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySpending.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7096712E2B6CC3ED00BD1A73 /* mySpendingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mySpendingApp.swift; sourceTree = "<group>"; };
 		709671302B6CC3ED00BD1A73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		705E41332B6CCE05007EDC38 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				705E414C2B7256F6007EDC38 /* Models */,
+				705E41422B70C9BA007EDC38 /* ExpenseScreen.swift */,
+				705E41442B70C9C9007EDC38 /* ReportScreen.swift */,
+				705E41462B70CA54007EDC38 /* AddExpenseScreen.swift */,
+				705E41482B70CA6A007EDC38 /* ManageExpenseScreen.swift */,
+				705E414A2B70CA7C007EDC38 /* CategoryScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		705E414C2B7256F6007EDC38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				705E414D2B725707007EDC38 /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		709671222B6CC3EC00BD1A73 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +84,9 @@
 		7096712D2B6CC3ED00BD1A73 /* mySpending */ = {
 			isa = PBXGroup;
 			children = (
-				7096712E2B6CC3ED00BD1A73 /* mySpendingApp.swift */,
 				709671302B6CC3ED00BD1A73 /* ContentView.swift */,
+				7096712E2B6CC3ED00BD1A73 /* mySpendingApp.swift */,
+				705E41332B6CCE05007EDC38 /* Screens */,
 				709671322B6CC3EF00BD1A73 /* Assets.xcassets */,
 				709671342B6CC3EF00BD1A73 /* Preview Content */,
 			);
@@ -137,6 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705E41472B70CA54007EDC38 /* AddExpenseScreen.swift in Sources */,
+				705E414E2B725707007EDC38 /* Category.swift in Sources */,
+				705E41432B70C9BA007EDC38 /* ExpenseScreen.swift in Sources */,
+				705E41452B70C9C9007EDC38 /* ReportScreen.swift in Sources */,
+				705E41492B70CA6A007EDC38 /* ManageExpenseScreen.swift in Sources */,
+				705E414B2B70CA7C007EDC38 /* CategoryScreen.swift in Sources */,
 				709671312B6CC3ED00BD1A73 /* ContentView.swift in Sources */,
 				7096712F2B6CC3ED00BD1A73 /* mySpendingApp.swift in Sources */,
 			);
